@@ -5,21 +5,21 @@
 class Octrafic < Formula
   desc "Test APIs naturally with AI - OpenAPI specs, natural language, intelligent responses"
   homepage "https://octrafic.com"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Octrafic/octrafic-cli/releases/download/v0.5.0/octrafic_Darwin_x86_64.tar.gz"
-      sha256 "ddb3bf1e2cf34f520222ac0e43d9ccf8588945ed0e6fed5163425fef141adb1a"
+      url "https://github.com/Octrafic/octrafic-cli/releases/download/v0.5.1/octrafic_Darwin_x86_64.tar.gz"
+      sha256 "1f3729dcb803ba5f129edd0f5ed037a658c49c5a513ad86c739c97fded1e404b"
 
       define_method(:install) do
         bin.install "octrafic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Octrafic/octrafic-cli/releases/download/v0.5.0/octrafic_Darwin_arm64.tar.gz"
-      sha256 "d757840452d199da892bf1aafe793c0b9d79769e960c7fc5464c65fa9ccadcb3"
+      url "https://github.com/Octrafic/octrafic-cli/releases/download/v0.5.1/octrafic_Darwin_arm64.tar.gz"
+      sha256 "c33ce3ca0d2e932659b77136d0a4f189472313393ef9a2832952a195d450db32"
 
       define_method(:install) do
         bin.install "octrafic"
@@ -29,15 +29,15 @@ class Octrafic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Octrafic/octrafic-cli/releases/download/v0.5.0/octrafic_Linux_x86_64.tar.gz"
-      sha256 "75ccb6e79315006020672349fb48591f0e28c8468cfa8744fa518037f2ec9c41"
+      url "https://github.com/Octrafic/octrafic-cli/releases/download/v0.5.1/octrafic_Linux_x86_64.tar.gz"
+      sha256 "7f125003a9300fe2135215a7016f2466684eddc2196e964bca13aa58379db372"
       define_method(:install) do
         bin.install "octrafic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Octrafic/octrafic-cli/releases/download/v0.5.0/octrafic_Linux_arm64.tar.gz"
-      sha256 "c04661520cacbd703192fcae428435cd0eaf714a37d57694dd601fa5b79070d4"
+      url "https://github.com/Octrafic/octrafic-cli/releases/download/v0.5.1/octrafic_Linux_arm64.tar.gz"
+      sha256 "ec03a1bb528074181306c68bb8a096adc22f9c486158c790d8a79b0a73cdd58e"
       define_method(:install) do
         bin.install "octrafic"
       end
